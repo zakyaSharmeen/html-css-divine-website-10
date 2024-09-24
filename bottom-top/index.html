@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Back To Top</title>
+  </head>
+
+  <body>
+    <style>
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      
+
+      
+
+      .to-top {
+        background: white;
+        position: fixed;
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+      }
+
+      .to-top.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+      }
+    </style>
+
+    <!-- <section class="section1">Section 1</section>
+    <section class="section2">Section 2</section>
+    <section class="section3">Section 3</section>
+    <section class="section4">Section 4</section> -->
+    <section class="navbar-1" id="navbar-1">
+      <div class="left">
+        <div class="address">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>123 Street, New York, USA</span>
+        </div>
+        <div class="hours">
+          <i class="fas fa-clock"></i>
+          <span>Mon - Fri : 09.00 AM - 09.00 PM</span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="phone">
+          <i class="fas fa-phone-alt"></i>
+          <span>+012 345 6789</span>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- navbar-2 -->
+    <section class="navbar-2" id="navbar-2">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-car"></i>
+          <h1>Drivin</h1>
+        </div>
+        <div class="menu">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">COURSES</a>
+          <a href="#">PAGES</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <a href="#" class="get-started">Get Started →</a>
+      </div>
+    </section>
+
+    <!-- section-banner-->
+    <section class="banner" id="banner-section">
+      <div class="container">
+        <div class="bgImg"></div>
+        <div class="content">
+          <h1 class="display-2 text-light mb-5 slideInDown">
+            Learn To Drive <br />
+            With Confidence
+          </h1>
+          <a href="" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
+          <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-facts -->
+    <section class="facilities-section" id="facilities-section">
+      <div class="main-container">
+        <div class="categories">
+          <div class="category">
+            <div><i class="fa-brands fa-react"></i></div>
+            <div>
+              <h4>Science</h4>
+              <p>
+                Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                lorem amet elitr vero...
+              </p>
+            </div>
+          </div>
+          <div class="category">
+            <div><i class="fa-brands fa-react"></i></div>
+            <div>
+              <h4>Science</h4>
+              <p>
+                Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                lorem amet elitr vero...
+              </p>
+            </div>
+          </div>
+          <div class="category">
+            <div><i class="fa-brands fa-react"></i></div>
+            <div>
+              <h4>Science</h4>
+              <p>
+                Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                lorem amet elitr vero...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about-us -->
+    <section class="about-us" id="about-us">
+      <div class="main-container">
+        <div class="about-section">
+          <div class="about-images">
+            <img src="/img/about-1.jpg" alt="Main Image" />
+            <img src="img/about-2.jpg" alt="Small Image" class="small-image" />
+          </div>
+          <div class="about-text">
+            <h2>ABOUT US</h2>
+            <h1>
+              We Help Students To Pass Test & Get A License On The First Try
+            </h1>
+            <p>
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <p>
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <div class="features-list">
+              <div><i class="fas fa-check"></i> Fully Licensed</div>
+              <div><i class="fas fa-check"></i> Online Tracking</div>
+              <div><i class="fas fa-check"></i> Affordable Fee</div>
+              <div><i class="fas fa-check"></i> Best Trainers</div>
+            </div>
+            <div class="read-more-bttn">
+              <a href="#" class="button">Read More</a>
+              <a href="#" class="contact"
+                ><i class="fas fa-phone-alt"></i>+012 345 6789</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section main-fixed-background -->
+    <section class="main-fixed-background" id="fixed-background">
+      <div class="main-container">
+        <div class="section-courses" id="courses">
+          <div class="courses-section">
+            <h2>TRAINING COURSES</h2>
+            <h1>
+              Our Courses Upskill You <br />
+              With Driving Training
+            </h1>
+            <div class="course-cards">
+              <div class="course-card">
+                <div class="price">$99</div>
+
+                <div class="course-info">
+                  <h3>Automatic Car Lessons</h3>
+                  <p>
+                    Tempor erat elitr rebum at clita dolor diam ipsum sit diam
+                    amet diam et eos
+                  </p>
+                  <div class="details">
+                    <span><i class="fas fa-signal"></i> Beginner</span>
+                    <span><i class="fas fa-calendar"></i> 3 Week</span>
+                  </div>
+                </div>
+                <img src="img/courses-1.jpg" alt="Automatic Car Lessons" />
+                <a href="#" class="read-more">Read More</a>
+              </div>
+              <div class="course-card">
+                <div class="price">$99</div>
+
+                <div class="course-info">
+                  <h3>Automatic Car Lessons</h3>
+                  <p>
+                    Tempor erat elitr rebum at clita dolor diam ipsum sit diam
+                    amet diam et eos
+                  </p>
+                  <div class="details">
+                    <span><i class="fas fa-signal"></i> Beginner</span>
+                    <span><i class="fas fa-calendar"></i> 3 Week</span>
+                  </div>
+                </div>
+                <img src="img/courses-1.jpg" alt="Automatic Car Lessons" />
+                <a href="#" class="read-more">Read More</a>
+              </div>
+              <div class="course-card">
+                <div class="price">$99</div>
+
+                <div class="course-info">
+                  <h3>Automatic Car Lessons</h3>
+                  <p>
+                    Tempor erat elitr rebum at clita dolor diam ipsum sit diam
+                    amet diam et eos
+                  </p>
+                  <div class="details">
+                    <span><i class="fas fa-signal"></i> Beginner</span>
+                    <span><i class="fas fa-calendar"></i> 3 Week</span>
+                  </div>
+                </div>
+                <img src="img/courses-1.jpg" alt="Automatic Car Lessons" />
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-section" id="contact-section">
+          <div class="appointment-section">
+            <form class="appointment-form">
+              <h2>Make Appointment</h2>
+              <div class="form-row">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div class="form-row">
+                <input type="text" placeholder="Courses Type" />
+                <input type="text" placeholder="Car Type" />
+              </div>
+              <div class="form-row">
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- choose-us -->
+    <section class="about-us" id="about-us">
+      <div class="main-container">
+        <div class="about-section">
+          <div class="about-text">
+            <h2>choose us</h2>
+            <h1>Best Driving Training Agency In Your City</h1>
+            <p>
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+
+            <div class="choose-list">
+              <div class="choose-content">
+                <div class="sub-content-choose">
+                  <p><i class="fas fa-check"></i>Online Tracking</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, minus.
+                  </p>
+                </div>
+                <div class="sub-content-choose">
+                  <p><i class="fas fa-check"></i>Online Tracking</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, minus.
+                  </p>
+                </div>
+              </div>
+              <div class="choose-content">
+                <div class="sub-content-choose">
+                  <p><i class="fas fa-check"></i>Online Tracking</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, minus.
+                  </p>
+                </div>
+                <div class="sub-content-choose">
+                  <p><i class="fas fa-check"></i>Online Tracking</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, minus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choose-images">
+            <img src="/img/about-1.jpg" alt="Main Image" />
+            <img src="img/about-2.jpg" alt="Small Image" class="small-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- trainer -->
+    <section class="trainer" id="trainer-section">
+      <div class="main-container">
+      <div class="sub-choose-content">
+        <h6>MEET THE TEAM</h6>
+        <h1>We Have Great <br> Experience Of Driving</h1>
+      </div>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="img/team-1.jpg" alt="Team Member 1">
+        <div class="team-details">
+            <h3>Full Name</h3>
+            <p>Trainer</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="img/team-1.jpg" alt="Team Member 1">
+        <div class="team-details">
+            <h3>Full Name</h3>
+            <p>Trainer</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="img/team-1.jpg" alt="Team Member 1">
+        <div class="team-details">
+            <h3>Full Name</h3>
+            <p>Trainer</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="img/team-1.jpg" alt="Team Member 1">
+        <div class="team-details">
+            <h3>Full Name</h3>
+            <p>Trainer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </section>
+
+    <!-- testimony -->
+     <!-- <section class="testimony-section" id="testimony-section">
+        <div class="main-container">
+            <div class="testimonial-section">
+                <div class="sub-choose-content">
+                    <h6>MEET THE TEAM</h6>
+                    <h1>What Our Clients Say!
+                    </h1>
+                  </div>
+                <div class="testimonial-card">
+                <div class="testimony-quote">
+                    <img src="img/testimonial-1.jpg" alt="Client Photo">
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                </div>
+                  <p>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                  <h3>Client Name</h3>
+                  <h4>Profession</h4>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <section class="testimony-section" id="testimony-section">
+      <div class="main-container">
+        <div class="sub-choose-content">
+          <h6>MEET THE TEAM</h6>
+          <h1>What Our Clients Say!</h1>
+        </div>
+        <div class="first-slider owl-carousel owl-theme">
+          <div class="item">
+            <div class="testimonial-section">
+              
+              <div class="testimonial-card">
+                <div class="testimony-quote">
+                  <img src="../img/testimonial-1.jpg" alt="Client Photo" />
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                </div>
+                <p>
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h3>Client Name</h3>
+                <h4>Profession</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-section">
+              
+              <div class="testimonial-card">
+                <div class="testimony-quote">
+                  <img src="../img/testimonial-1.jpg" alt="Client Photo" />
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                </div>
+                <p>
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h3>Client Name</h3>
+                <h4>Profession</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-section">
+             
+              <div class="testimonial-card">
+                <div class="testimony-quote">
+                  <img src="../img/testimonial-1.jpg" alt="Client Photo" />
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                  </div>
+                </div>
+                <p>
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h3>Client Name</h3>
+                <h4>Profession</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- footer -->
+    <section class="footer-section" id="footer-section">
+      <div class="main-container">
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>Get In Touch</h3>
+              <div class="logo">
+                <i class="fa-solid fa-car"></i>
+                <h1>Drivin</h1>
+              </div>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA
+              </p>
+              <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+              <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>About Us</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Contact Us</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Our Services</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Terms & Condition</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Support</a>
+            </div>
+            <div class="footer-column">
+              <h3>Popular Links</h3>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>About Us</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Contact Us</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Our Services</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Terms & Condition</a>
+              <a href="#"><i class="fa-solid fa-greater-than"></i>Support</a>
+            </div>
+            <div class="footer-column">
+              <h3>Newsletter</h3>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" />
+                <input type="submit" value="Sign Up" />
+              </form>
+              <h6 class="follow">Follow Us</h6>              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer-bottom">
+            <div class="main-container">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    © <a href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            
+            </div>
+            
+            
+        </div>
+      
+    </section>
+
+    <a href="#" class="to-top"> <i class="fa-solid fa-arrow-up"></i> </a>
+
+    <script>
+      // Select the element with the class "to-top"
+      const toTop = document.querySelector(".to-top");
+
+      // Add an event listener for the window's scroll event
+      window.addEventListener("scroll", () => {
+        // Check if the vertical scroll position is greater than 100 pixels
+        if (window.pageYOffset > 100) {
+          // If so, add the "active" class to the "to-top" element
+          toTop.classList.add("active");
+        } else {
+          // Otherwise, remove the "active" class from the "to-top" element
+          toTop.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>

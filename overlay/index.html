@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .title {
+        font-family: sans-serif;
+        color: #dc2d5e;
+      }
+      .container-overlay-1 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+      }
+
+      .image {
+        display: block;
+        width: 200px;
+        height: 200px;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.3s ease;
+        background-color: #008cba;
+      }
+      .container-overlay-1:hover .overlay {
+        opacity: 1;
+      }
+
+      .overlayTop {
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        border: 3px solid black;
+        background-color: #d63c58;
+      }
+
+      .container-overlay-1:hover .overlayTop {
+        height: 100%;
+      }
+    </style>
+
+    <div class="container-overlay-1">
+      <img src="boat.png" alt="Avatar" class="image" />
+      <div class="overlay overlayTop">
+        <div class="text">Top</div>
+      </div>
+    </div>
+  </body>
+</html>
